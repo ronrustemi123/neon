@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import localFont from 'next/font/local';
-
+import {ThemeProvider} from "@/lib/theme-provider";
 
 const satoshi = localFont({
     src: [
@@ -35,7 +35,7 @@ const satoshi = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Neon",
+  title: "Neon - Bring your ideas to light",
   description: "Description",
 };
 
@@ -45,11 +45,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
           className={`${satoshi.variable} font-satoshi antialiased`}
       >
-        {children}
+      <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+      >
+          {children}
+      </ThemeProvider>
       </body>
     </html>
   );
