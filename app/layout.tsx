@@ -35,8 +35,8 @@ const satoshi = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Neon - Bring your ideas to light",
-  description: "Description",
+  title: "Neon – Bring your ideas to light",
+  description: "Neon builds high-performance websites and mobile apps with modern design, speed, and functionality—helping businesses grow in the digital era.",
 };
 
 export default function RootLayout({

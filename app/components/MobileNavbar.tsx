@@ -24,32 +24,12 @@ export default function MobileNavbar({navItems}: {navItems: navItemType[]}) {
                     <ul className="space-y-0 font-geist text-neutral-200">
                         {navItems.map((item) => (
                             <li key={item.label}>
-                                {item.isDropdown ? (
-                                    <details className="px-3">
-                                        <summary className="cursor-pointer py-2">{item.label}</summary>
-                                        <ul className="pl-4 space-y-1">
-                                            {item.dropdownItems?.map((subItem) => (
-                                                <li key={subItem.label}>
-                                                    <Link href={subItem.href} className="block py-1">
-                                                        {subItem.label}
-                                                    </Link>
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    </details>
-                                ) : (
-                                    // @ts-ignore
                                     <Link href={item.href} className="block py-2 px-3">
                                         {item.label}
                                     </Link>
-                                )}
                             </li>
                         ))}
                     </ul>
-                    <Button variant="outline" size={'sm'} className="gap-2 mt-1 text-white border-white flex lg:hidden">
-                        <PlusIcon height={20} width={20} />
-                        <span className="text-sm">Post</span>
-                    </Button>
                 </div>
             </SheetContent>
         </Sheet>

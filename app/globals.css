@@ -5,6 +5,11 @@
 
 * {
   font-family: 'Satoshi', sans-serif;
+  scroll-behavior: smooth;
+}
+
+#project-section {
+  scroll-margin-top: 150px; /* adjust offset here */
 }
 
 @theme inline {

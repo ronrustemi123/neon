@@ -1,4 +1,4 @@
-import CountUp from "@/public/reactbits/CountUp";
+import CountUp from "@/components/reactbits/CountUp";
 import {PlusIcon} from "lucide-react";
 
 export default function CountUpCustom({text, from, to, icon = true}: {text: string, from: number, to: number, icon?: boolean}) {

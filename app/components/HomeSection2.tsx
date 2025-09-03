@@ -1,8 +1,9 @@
 import {MonitorIcon, SmartphoneIcon, ZapIcon} from "lucide-react";
-import {StaticImageData} from "next/image";
 import {ForwardRefExoticComponent} from "react";
 import {LucideProps} from "lucide-react";
 import {RefAttributes} from "react";
+import Image from "next/image";
+import placeholderImg from '@/public/placeholder-600x300.jpg'
 
 interface offerInterface {
     icon: ForwardRefExoticComponent<Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>>,
@@ -31,16 +32,16 @@ const offerArr: offerInterface[] = [
 
 export default function HomeSection2() {
     return (
-        <section className={'min-h-[70vh] relative z-10 w-page-width mx-auto'}>
+        <section className={'min-h-[100vh] relative z-10 w-page-width mx-auto mt-24'}>
             <h2 className={'text-5xl md:text-6xl text-white text-center'}>What we <span className={'glowing-text'}>offer</span></h2>
             <p className={'text-lg md:text-xl text-neutral-400 text-center max-w-[600px] font-medium mx-auto mt-4'}>
                 At <span className={'glowing-text'}>NEON</span>, we blend modern design with powerful functionality to create digital experiences that truly stand out.
                 Our team of developers and designers is dedicated to delivering solutions that don’t just look great, but also perform seamlessly.
             </p>
-            <div className={' mt-24 flex items-center'}>
-                <div className={'min-h-[600px] w-1/2  '}>
+            <div className={' mt-12 md:mt-24 flex flex-col md:flex-row gap-12 items-center'}>
+                <div className={' w-full md:w-1/2 flex items-start flex-col gap-8 justify-center'}>
                     {offerArr.map((el: offerInterface) => (
-                        <div className={'flex gap-2.5 items-center mt-8 group w-fit'} key={el.label}>
+                        <div className={'flex gap-2.5 items-center group w-fit'} key={el.label}>
                             <span className={'p-3 border-1 group-hover:text-blue-500 group-hover:border-blue-500 transition duration-150 text-neutral-400 border-neutral-500 rounded-lg'}>
                                 <el.icon size={24} />
                             </span>
@@ -51,8 +52,8 @@ export default function HomeSection2() {
                         </div>
                     ))}
                 </div>
-                <div className={'min-h-[600px] w-1/2'}>
-
+                <div className={'w-full md:w-1/2'}>
+                    <Image src={placeholderImg} alt={'placeholder image'} className={'rounded-2xl w-full h-full sm:h-[300px] object-cover object-center'} width={600} height={300} />
                 </div>
             </div>
         </section>

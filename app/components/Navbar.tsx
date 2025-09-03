@@ -16,15 +16,16 @@ export type navItemType = {
 
 const navItems: navItemType[] = [
     { label: 'Home', href: '/' },
+    { label: 'About Us', href: '/' },
     { label: 'Projects', href: '/' },
-    { label: 'About Us', href: '/' }
+    { label: 'Contact Us', href: '/' },
 ];
 
 export default function Navbar() {
     return (
-        <header className={`sticky top-10 h-[80px] w-full flex items-center z-50`}>
+        <header className={`sticky top-4 md:top-10 h-[80px] w-full flex items-center z-50`}>
             <nav className={`h-full border mx-auto w-page-width transition-colors duration-300 rounded-full px-9  flex items-center justify-between backdrop-blur-md bg-neutral-200/10`}>
-                <h1 className="text-xl font-bold text-blue-400">NEON</h1>
+                <h1 className="text-xl font-bold glowing-text">NEON</h1>
 
                 {/* Desktop Navigation */}
                 <NavigationMenu viewport={false} className="hidden lg:flex">

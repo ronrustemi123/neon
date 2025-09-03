@@ -1,16 +1,23 @@
-import DarkVeil from "@/public/reactbits/DarkVeil";
 import Navbar from "@/app/components/Navbar";
 import Hero from "@/app/components/Hero";
 import HomeSection1 from "@/app/components/HomeSection1";
 import HomeSection2 from "@/app/components/HomeSection2";
 import HomeSection3 from "@/app/components/HomeSection3";
+import RippleGrid from "@/components/reactbits/RippleGrid";
 
 export default function Home() {
   return (
         <main className={'w-full bg-black '}>
             <Navbar />
             <section className={'min-h-screen'}>
-                <DarkVeil hueShift={25}/>
+                <RippleGrid
+                    gridSize={20}
+                    rippleIntensity={0}
+                    gridColor={'#193cb8'}
+                    opacity={0.9}
+                    vignetteStrength={50}
+                    mouseInteraction={false}
+                />
                 <Hero />
             </section>
             <HomeSection1 />
