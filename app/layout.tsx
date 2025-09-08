@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import localFont from 'next/font/local';
 import {ThemeProvider} from "@/lib/theme-provider";
+import Navbar from "@/app/components/Navbar";
 
 const satoshi = localFont({
     src: [
@@ -35,10 +36,43 @@ const satoshi = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Neon – Bring your ideas to light",
-  description: "Neon builds high-performance websites and mobile apps with modern design, speed, and functionality—helping businesses grow in the digital era.",
+    metadataBase: new URL("https://neon.dev"), // replace with your domain
+    title: {
+        default: "Neon – Bring your ideas to light",
+        template: "%s | Neon",
+    },
+    description:
+        "Neon builds high-performance websites and mobile apps with modern design, speed, and functionality—helping businesses grow in the digital era.",
+    keywords: [
+        "web development",
+        "mobile apps",
+        "performance",
+        "digital agency",
+        "North Macedonia",
+    ],
+    openGraph: {
+        title: "Neon – Bring your ideas to light",
+        description:
+            "We craft cutting-edge web and mobile solutions that drive business growth.",
+        url: "https://neon.dev", // replace with domain
+        siteName: "Neon",
+        locale: "en_US",
+        type: "website",
+        images: [
+            {
+                url: "/web-app-manifest-512x512.png", // put in /public
+                width: 512,
+                height: 512,
+                alt: "Neon Agency preview",
+            },
+        ],
+    },
+    icons: {
+        icon: "/favicon.ico",
+        shortcut: "/icon0.svg",
+        apple: "/apple-icon.png",
+    }
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -55,6 +89,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
       >
+          <Navbar />
           {children}
       </ThemeProvider>
       </body>

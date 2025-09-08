@@ -15,9 +15,9 @@ export type navItemType = {
 }
 
 const navItems: navItemType[] = [
-    { label: 'Home', href: '/' },
+    { label: 'Home', href: '#' },
     { label: 'About Us', href: '/' },
-    { label: 'Projects', href: '/' },
+    { label: 'Projects', href: '#project-section' },
     { label: 'Contact Us', href: '/' },
 ];
 
@@ -36,6 +36,7 @@ export default function Navbar() {
                                         className="bg-transparent  text-neutral-100  text-base px-3 py-2  data-[active]:hover:bg-accent  data-[active]:text-accent-foreground hover:bg-accent focus:text-accent-foreground focus-visible:ring-ring/50 [&_svg:not([class*='text-'])]:text-muted-foreground flex flex-col gap-1 rounded-sm p-2 transition-all outline-none focus-visible:ring-[3px] focus-visible:outline-1 [&_svg:not([class*='size-'])]:size-4"
                                         // @ts-ignore
                                         href={item.href}
+                                        scroll={true}
                                     >
                                         {item.label}
                                     </Link>

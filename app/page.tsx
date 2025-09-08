@@ -1,4 +1,3 @@
-import Navbar from "@/app/components/Navbar";
 import Hero from "@/app/components/Hero";
 import HomeSection1 from "@/app/components/HomeSection1";
 import HomeSection2 from "@/app/components/HomeSection2";
@@ -7,8 +6,7 @@ import RippleGrid from "@/components/reactbits/RippleGrid";
 
 export default function Home() {
   return (
-        <main className={'w-full bg-black '}>
-            <Navbar />
+        <main className={''}>
             <section className={'min-h-screen'}>
                 <RippleGrid
                     gridSize={20}

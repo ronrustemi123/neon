@@ -15,7 +15,7 @@ export default function Hero() {
                     Contact Us
                 </Button>
                 <Button variant={'outline'} className={'group'} asChild={true}>
-                    <Link href={'#project-section'}>
+                    <Link href={'#project-section'} scroll={true}>
                         Our Work
                         <ChevronRight className={'group-hover:rotate-90 transition-transform duration-200 '} />
                     </Link>
