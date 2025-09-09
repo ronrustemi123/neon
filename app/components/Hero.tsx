@@ -11,11 +11,13 @@ export default function Hero() {
                 we bring your <span className={'glowing-text'}>ideas</span> to life with precision and innovation.
             </h2>
             <div className={'flex items-center gap-4 mt-8'}>
-                <Button className={'bg-neutral-200'} >
-                    Contact Us
+                <Button className={'bg-neutral-200'} asChild={true} >
+                    <Link href={'#contact'} scroll={true}>
+                        Contact Us
+                    </Link>
                 </Button>
                 <Button variant={'outline'} className={'group'} asChild={true}>
-                    <Link href={'#project-section'} scroll={true}>
+                    <Link href={'#projects'} scroll={true}>
                         Our Work
                         <ChevronRight className={'group-hover:rotate-90 transition-transform duration-200 '} />
                     </Link>

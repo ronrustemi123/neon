@@ -3,6 +3,8 @@ import HomeSection1 from "@/app/components/HomeSection1";
 import HomeSection2 from "@/app/components/HomeSection2";
 import HomeSection3 from "@/app/components/HomeSection3";
 import RippleGrid from "@/components/reactbits/RippleGrid";
+import HomeSection4 from "@/app/components/HomeSection4";
+import Footer from "@/app/components/Footer";
 
 export default function Home() {
   return (
@@ -21,6 +23,7 @@ export default function Home() {
             <HomeSection1 />
             <HomeSection2 />
             <HomeSection3 />
+            <HomeSection4 />
         </main>
   );
 }

@@ -8,7 +8,7 @@
   scroll-behavior: smooth;
 }
 
-#project-section {
+#projects, #about, #contact {
   scroll-margin-top: 150px; /* adjust offset here */
 }
 
@@ -136,5 +136,17 @@
     @apply bg-gradient-to-r from-blue-400 to-blue-700 bg-clip-text text-transparent ;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+}
+@layer utilities {
+  /* Chrome, Safari, and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* IE, Edge, and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
 }

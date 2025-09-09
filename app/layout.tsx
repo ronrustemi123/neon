@@ -3,6 +3,7 @@ import "./globals.css";
 import localFont from 'next/font/local';
 import {ThemeProvider} from "@/lib/theme-provider";
 import Navbar from "@/app/components/Navbar";
+import Footer from "@/app/components/Footer";
 
 const satoshi = localFont({
     src: [
@@ -91,6 +92,7 @@ export default function RootLayout({
       >
           <Navbar />
           {children}
+          <Footer />
       </ThemeProvider>
       </body>
     </html>
