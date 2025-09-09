@@ -16,9 +16,9 @@ export type navItemType = {
 
 const navItems: navItemType[] = [
     { label: 'Home', href: '#' },
-    { label: 'About Us', href: '/' },
-    { label: 'Projects', href: '#project-section' },
-    { label: 'Contact Us', href: '/' },
+    { label: 'About Us', href: '#about' },
+    { label: 'Projects', href: '#projects' },
+    { label: 'Contact Us', href: '#contact' },
 ];
 
 export default function Navbar() {

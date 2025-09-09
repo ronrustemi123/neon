@@ -8,7 +8,7 @@ import {Badge} from "@/components/ui/badge";
 export default function HomeProjectCard({title, desc, fromDate, toDate, link, img}: {title: string; desc: string, fromDate: string, toDate: string, link: string, img: StaticImageData}) {
     return (
         <SpotlightCard
-            className="w-full min-h-80 flex flex-col md:flex-row gap-6 "
+            className="w-full min-h-80 flex flex-col md:flex-row gap-0 md:gap-6 "
             spotlightColor="rgba(20, 71, 230, 0.25)"
         >
             <div className={'w-full md:w-1/2'}>
