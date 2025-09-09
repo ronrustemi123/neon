@@ -5,7 +5,7 @@ export default function HomeSection3() {
     return (
         <section className={'min-h-screen w-page-width mx-auto relative z-10  mt-24'} id={'projects'}>
             <div >
-                <h2 className={'text-5xl md:text-6xl text-white text-center'}><span className={'glowing-text font-medium'}>NEON's</span> projects</h2>
+                <h2 className={'text-5xl md:text-6xl text-white text-center'}><span className={'glowing-text font-medium'}>NEON&apos;s</span> projects</h2>
                 <p className={'text-lg md:text-xl text-neutral-400 text-center max-w-[600px] font-medium mx-auto mt-4'}>
                     Discover some of our top projects
                 </p>

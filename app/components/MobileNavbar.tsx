@@ -1,10 +1,8 @@
 import {Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger} from "@/components/ui/sheet";
-import {MenuIcon, PlusIcon} from "lucide-react";
+import {MenuIcon} from "lucide-react";
 import Link from "next/link";
-import {Button} from "@/components/ui/button";
 
 import {navItemType} from "@/app/components/Navbar";
-
 
 export default function MobileNavbar({navItems}: {navItems: navItemType[]}) {
     return (

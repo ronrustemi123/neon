@@ -4,7 +4,6 @@ import HomeSection2 from "@/app/components/HomeSection2";
 import HomeSection3 from "@/app/components/HomeSection3";
 import RippleGrid from "@/components/reactbits/RippleGrid";
 import HomeSection4 from "@/app/components/HomeSection4";
-import Footer from "@/app/components/Footer";
 
 export default function Home() {
   return (
