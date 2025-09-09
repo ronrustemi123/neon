@@ -22,7 +22,11 @@ export default function MobileNavbar({navItems}: {navItems: navItemType[]}) {
                     <ul className="space-y-0 font-geist text-neutral-200">
                         {navItems.map((item) => (
                             <li key={item.label}>
-                                    <Link href={item.href} className="block py-2 px-3">
+                                    <Link
+                                        // @ts-expect-error - Component expects different prop types
+                                        href={item.href}
+                                        className="block py-2 px-3"
+                                    >
                                         {item.label}
                                     </Link>
                             </li>
