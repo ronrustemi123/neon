@@ -1,3 +1,6 @@
+'use client';
+
+import {useState} from "react";
 import {Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger} from "@/components/ui/sheet";
 import {MenuIcon} from "lucide-react";
 import Link from "next/link";
@@ -5,9 +8,12 @@ import Link from "next/link";
 import {navItemType} from "@/app/components/Navbar";
 
 export default function MobileNavbar({navItems}: {navItems: navItemType[]}) {
+
+    const [open, setOpen] = useState(false);
+
     return (
-        <Sheet>
-            <SheetTrigger asChild>
+        <Sheet open={open} >
+            <SheetTrigger asChild onClick={() => setOpen(true)}>
                 <MenuIcon size={24} className="lg:hidden " />
             </SheetTrigger>
             <SheetContent
@@ -15,7 +21,7 @@ export default function MobileNavbar({navItems}: {navItems: navItemType[]}) {
                 className="w-full xs:w-[384px] h-full border-0 bg-neutral-800/20 backdrop-blur-lg"
             >
                 <SheetHeader>
-                    <SheetTitle>LOGO</SheetTitle>
+                    <SheetTitle className="text-lg font-bold glowing-text">NEON</SheetTitle>
                 </SheetHeader>
 
                 <div className="flex justify-between px-2 pr-4">
@@ -26,6 +32,7 @@ export default function MobileNavbar({navItems}: {navItems: navItemType[]}) {
                                         // @ts-expect-error - Component expects different prop types
                                         href={item.href}
                                         className="block py-2 px-3"
+                                        onClick={() => setOpen(false)}
                                     >
                                         {item.label}
                                     </Link>
