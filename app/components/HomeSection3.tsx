@@ -1,5 +1,7 @@
 import HomeProjectCard from "@/app/components/HomeProjectCard";
 import placeholderImg from '@/public/placeholder-600x300.jpg'
+import euroinvestImg from '@/public/euroinvest.png'
+import bajramiImg from '@/public/bajrami.png'
 
 export default function HomeSection3() {
     return (
@@ -13,27 +15,19 @@ export default function HomeSection3() {
             <div className={'mt-12 flex flex-col gap-12'}>
                         <HomeProjectCard
                             title={'Euro Invest'}
-                            desc={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at bibendum est. Fusce vel scelerisque.'}
-                            fromDate={'May 2025'}
-                            toDate={'Jun 2025'}
-                            link={'https://tokentrace.pages.dev/'}
-                            img={placeholderImg}
+                            desc={'Euroinvest is a leader in the asphalt and transportation industry with many years of experience. We provide guaranteed quality and services that build the future of infrastructure.'}
+                            fromDate={'Jun 2025'}
+                            toDate={'Jul 2025'}
+                            link={'https://euroinvest.space/'}
+                            img={euroinvestImg}
                         />
                         <HomeProjectCard
-                            title={'Euro Invest'}
-                            desc={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at bibendum est. Fusce vel scelerisque.'}
-                            fromDate={'May 2025'}
-                            toDate={'Jun 2025'}
-                            link={'https://tokentrace.pages.dev/'}
-                            img={placeholderImg}
-                        />
-                        <HomeProjectCard
-                            title={'Euro Invest'}
-                            desc={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at bibendum est. Fusce vel scelerisque.'}
-                            fromDate={'May 2025'}
-                            toDate={'Jun 2025'}
-                            link={'https://tokentrace.pages.dev/'}
-                            img={placeholderImg}
+                            title={'Bajram Rexhepi'}
+                            desc={'All of your ideas will be considered - you are the backbone of our program. Help us build a clear and achievable plan for Tetovo.'}
+                            fromDate={'Jul 2025'}
+                            toDate={'Sep 2025'}
+                            link={'https://bajramrexhepi.com/sq'}
+                            img={bajramiImg}
                         />
             </div>
         </section>

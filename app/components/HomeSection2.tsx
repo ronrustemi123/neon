@@ -3,7 +3,7 @@ import {ForwardRefExoticComponent} from "react";
 import {LucideProps} from "lucide-react";
 import {RefAttributes} from "react";
 import Image from "next/image";
-import placeholderImg from '@/public/placeholder-600x300.jpg'
+import placeholderImg from '@/public/desktop.jpg'
 
 interface offerInterface {
     icon: ForwardRefExoticComponent<Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>>,
@@ -52,7 +52,7 @@ export default function HomeSection2() {
                         </div>
                     ))}
                 </div>
-                <div className={'w-full md:w-1/2'}>
+                <div className={'w-full hidden md:block md:w-1/2'}>
                     <Image src={placeholderImg} alt={'placeholder image'} className={'rounded-2xl w-full h-full sm:h-[300px] object-cover object-center'} width={600} height={300} />
                 </div>
             </div>
