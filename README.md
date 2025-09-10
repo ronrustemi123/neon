@@ -16,3 +16,6 @@ npm install
 ```
 npm run dev
 ```
+
+## Todo
+1. Create sitemap and robots.txt
