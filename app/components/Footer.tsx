@@ -14,7 +14,7 @@ export default function Footer() {
                     </span>
                     <span className={'flex items-center-safe  text-neutral-400 gap-2.5 mt-3'}>
                             <PhoneIcon size={16} />
-                            <p className={'text-lg'}>+389 75 246 835</p>
+                            <p className={'text-lg'}>+389 75 208 835</p>
                     </span>
                 </div>
                 <div className={'mt-12 flex flex-col gap-1.5'}>

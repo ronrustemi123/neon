@@ -14,7 +14,7 @@ export default function HomeSection4() {
                     </span>
                     <span className={'flex items-center-safe  text-neutral-400 gap-2.5 mt-3'}>
                         <PhoneIcon size={18} />
-                        <p className={'text-lg md:text-xl'}>+389 75 246 835</p>
+                        <p className={'text-lg md:text-xl'}>+389 75 208 835</p>
                     </span>
                 </div>
                 <HomeSection4Form />
