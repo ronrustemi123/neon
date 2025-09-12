@@ -23,7 +23,7 @@ export default function HomeSection3() {
                         />
                         <HomeProjectCard
                             title={'Bajram Rexhepi'}
-                            desc={'All of your ideas will be considered - you are the backbone of our program. Help us build a clear and achievable plan for Tetovo.'}
+                            desc={'The official page of Bajram Rexhepi, candidate for Mayor of the Municipality of Tetovo. Discover his commitment to serving the citizens and his vision for the development of Tetovo.'}
                             fromDate={'Jul 2025'}
                             toDate={'Sep 2025'}
                             link={'https://bajramrexhepi.com/sq'}

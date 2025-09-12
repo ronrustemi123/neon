@@ -1,8 +1,8 @@
 'use client';
 
 import {useState} from "react";
-import {Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger} from "@/components/ui/sheet";
-import {MenuIcon} from "lucide-react";
+import {Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger, SheetClose} from "@/components/ui/sheet";
+import {MenuIcon, XIcon} from "lucide-react";
 import Link from "next/link";
 
 import {navItemType} from "@/app/components/Navbar";
@@ -12,8 +12,8 @@ export default function MobileNavbar({navItems}: {navItems: navItemType[]}) {
     const [open, setOpen] = useState(false);
 
     return (
-        <Sheet open={open} >
-            <SheetTrigger asChild onClick={() => setOpen(true)}>
+        <Sheet open={open} onOpenChange={setOpen}>
+            <SheetTrigger asChild >
                 <MenuIcon size={24} className="lg:hidden " />
             </SheetTrigger>
             <SheetContent
@@ -40,6 +40,7 @@ export default function MobileNavbar({navItems}: {navItems: navItemType[]}) {
                         ))}
                     </ul>
                 </div>
+
             </SheetContent>
         </Sheet>
     )

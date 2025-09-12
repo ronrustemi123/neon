@@ -10,14 +10,14 @@ export default function Footer() {
                     <h2 className={'text-5xl glowing-text font-medium inline-block mt-12'}>NEON</h2>
                     <span className={'flex items-center-safe text-neutral-400 gap-2.5 mt-6'}>
                         <MailIcon size={16} />
-                        <p className={'text-lg'}>neoncomputers1999@email.com</p>
+                        <p className={'text-lg'}>neoncomputers1999@gmail.com</p>
                     </span>
                     <span className={'flex items-center-safe  text-neutral-400 gap-2.5 mt-3'}>
                             <PhoneIcon size={16} />
                             <p className={'text-lg'}>+389 75 208 835</p>
                     </span>
                 </div>
-                <div className={'mt-12 flex flex-col gap-1.5'}>
+                <div className={'mt-12 flex flex-col gap-1.5 *:w-fit'}>
                     <h3 className={'text-2xl font-medium text-neutral-200'}>Quick Links</h3>
                     <Link
                         href={'#about'}
@@ -38,7 +38,7 @@ export default function Footer() {
                         Contact
                     </Link>
                 </div>
-                <div className={'mt-12 flex flex-col gap-1.5'}>
+                <div className={'mt-12 flex flex-col gap-1.5 *:w-fit'}>
                     <h3 className={'text-2xl font-medium text-neutral-200'}>Socials</h3>
                     <Link
                         href={'https://instagram.com/neonsysdev/'}

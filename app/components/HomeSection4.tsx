@@ -10,7 +10,7 @@ export default function HomeSection4() {
                     <p className={'text-lg md:text-xl w-full md:w-5/6 text-neutral-400 mt-4'}>We are committed to processing the information in order to contact you and talk about your project. </p>
                     <span className={'flex items-center-safe text-neutral-400 gap-2.5 mt-8'}>
                         <MailIcon size={18} />
-                        <p className={'text-lg md:text-2xl'}>neoncomputers1999@email.com</p>
+                        <p className={'text-lg md:text-2xl'}>neoncomputers1999@gmail.com</p>
                     </span>
                     <span className={'flex items-center-safe  text-neutral-400 gap-2.5 mt-3'}>
                         <PhoneIcon size={18} />
