@@ -37,7 +37,7 @@ const satoshi = localFont({
 });
 
 export const metadata: Metadata = {
-    metadataBase: new URL("https://neon.dev"), // replace with your domain
+    metadataBase: new URL("https://neon-phi-dun.vercel.app/"), // replace with your domain
     title: {
         default: "Neon – Bring your ideas to light",
         template: "%s | Neon",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
         title: "Neon – Bring your ideas to light",
         description:
             "We craft cutting-edge web and mobile solutions that drive business growth.",
-        url: "https://neon.dev", // replace with domain
+        url: "https://neon-phi-dun.vercel.app/", // replace with domain
         siteName: "Neon",
         locale: "en_US",
         type: "website",
