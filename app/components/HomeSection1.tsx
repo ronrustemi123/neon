@@ -8,8 +8,8 @@ export default function HomeSection1() {
                 Our mission is to help businesses illuminate their potential through innovative technology.
             </p>
             <div className={'grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 w-full mt-16 md:mt-32'}>
-                <CountUpCustom from={0} to={20} text={'Projects Completed'} />
-                <CountUpCustom from={0} to={10} text={'Happy Clients'} />
+                <CountUpCustom from={0} to={10} text={'Projects Completed'} />
+                <CountUpCustom from={0} to={5} text={'Happy Clients'} />
                 <CountUpCustom from={0} to={3} text={'Years Experience'} />
                 <CountUpCustom icon={false} from={0} to={24} text={'Support'} />
             </div>
